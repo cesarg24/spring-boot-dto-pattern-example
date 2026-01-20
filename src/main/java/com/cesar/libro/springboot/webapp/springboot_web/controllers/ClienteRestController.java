@@ -24,7 +24,7 @@ public class ClienteRestController {
 
 @GetMapping("/cliente-dto")
 public ClienteDto clientedto() {
-        Cliente clienteOriginal = new Cliente("Ing.", "Cesar", "Guzman");
+        Cliente clienteOriginal = new Cliente("Ing.", "John", "More");
         // El constructor del DTO se encargará de sacar solo el nombre
         ClienteDto cliDto = new ClienteDto("cesar@gmail.com", clienteOriginal);
         return cliDto;
