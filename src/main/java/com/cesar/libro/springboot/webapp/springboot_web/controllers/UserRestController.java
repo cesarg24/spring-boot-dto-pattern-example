@@ -23,10 +23,10 @@ public class UserRestController {
         return body;
     }
 
-     @GetMapping("/user")
+    @GetMapping("/user")
     public Cliente user(){
         
-         Cliente cli = new Cliente("Clientes de Amazon", "Jhon", "Smith");
+        Cliente cli = new Cliente("Clientes de Amazon", "Jhon", "Smith");
         Map<String, Object> body = new HashMap<>();
 
         body.put("title", "Esto no se devuelve");
